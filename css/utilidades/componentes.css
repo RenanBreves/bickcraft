@@ -1,0 +1,101 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#00ffbf, #0cf2a5);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: var(--p5);
+  font: 600 1.125rem/1.35 "Arial", sans-serif;
+  max-width: max-content;
+}
+
+.botao:hover {
+  background: linear-gradient(#0dffb6, #17e593);
+}
+
+.botao.secundario {
+  background: var(--c10);
+  color: var(--c2);
+}
+
+.botao.secundario:hover {
+  background: var(--c9);
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+.link {
+  display: inline-block;
+  color: var(--p1);
+  font: 500 1.5rem/1.5 "Arial", sans-serif;
+  transition: 0.3s;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+}
+
+.link:hover {
+  color: var(--c0);
+}
+
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--c11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}

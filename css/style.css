@@ -1,86 +1,39 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import "./global/header.css";
+@import "./global/global.css";
+@import "./global/footer.css";
+@import "./utilidades/formulario.css";
 
-a {
-  text-decoration: none;
-}
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
+/* Bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
 
-.header-bg {
-  background: #000000;
-}
+/* Utilidades */
+@import "./utilidades/componentes.css";
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* Home page */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./seguros/seguros.css";
 
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+/* termos */
+@import "./termos/termos.css";
 
-.header-menu a {
-  padding: 16px 0;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 18px;
-  position: relative;
-}
+/* bicicletas */
+@import "./bicicletas/bicicletas.css";
 
-.header-menu a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: #ffffff;
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
+/* seguros */
+@import "./seguros/perguntas.css";
+@import "./seguros/vantagens.css";
 
-.header-menu a:hover:after {
-  width: 100%;
-}
+@import "./bicicleta/bicicleta.css";
+@import "./bicicleta/seguro.css";
 
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
+/* contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
 
-  .header-menu a {
-    background: #111111;
-    padding: 16px 12px;
-    border-radius: 4px;
-  }
-
-  .header-menu a:hover {
-    background: #2e2e2e;
-  }
-
-  .header-menu a::after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-}
+@import "./orcamento/orcamento.css";
