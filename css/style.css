@@ -37,3 +37,6 @@
 @import "./contato/lojas.css";
 
 @import "./orcamento/orcamento.css";
+
+@import "./utilidades/animacao.css";
+@import "./utilidades/simple-anime.css";
